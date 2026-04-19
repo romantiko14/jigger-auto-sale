@@ -1,0 +1,13 @@
+name: Check Tron Payment Status
+on:
+  workflow_dispatch:
+
+jobs:
+  check-tx:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Query TronGrid API
+        run: |
+          curl -X POST "https://api.trongrid.io/wallet/gettransactionbyid" \
+          -H "Content-Type: application/json" \
+          -d "{\"value\": \"${{ secrets.TRON_TX_HASH }}\"}"
