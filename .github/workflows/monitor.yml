@@ -1,0 +1,25 @@
+name: Monitor Transactions
+
+on:
+  schedule:
+    - cron: '*/30 * * * *' # Runs every 30 minutes
+  workflow_dispatch: # Allows you to trigger it manually for testing
+
+jobs:
+  run-monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Run Monitor Script
+        run: |
+          # Replace 'YourApp.jar' with your actual file name
+          # java -jar YourApp.jar 
+          echo "Monitor triggered successfully"
