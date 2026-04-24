@@ -1,0 +1,48 @@
+.wallet-card {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 450px;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    margin: 20px auto;
+}
+
+.highlight { color: #00d4ff; }
+
+.mono {
+    font-family: 'Courier New', Courier, monospace;
+    background: #2a2a2a;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.status-tag {
+    background: #444;
+    padding: 3px 8px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+.network-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 15px;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+}
+
+.network-item { font-size: 0.85em; color: #bbb; }
+
+.ready { color: #00ff88; font-weight: bold; }
+
+.upgrade-text {
+    color: #ffa500;
+    font-weight: bold;
+    font-size: 0.9em;
+}
