@@ -1,9 +1,11 @@
 name: Monitor Transactions
-
 on:
   schedule:
     - cron: '*/30 * * * *' # Runs every 30 minutes
   workflow_dispatch: # Allows you to trigger it manually for testing
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   run-monitor:
@@ -20,6 +22,6 @@ jobs:
 
       - name: Run Monitor Script
         run: |
-          # Replace 'YourApp.jar' with your actual file name
+          # Once you upload your JAR, uncomment the line below:
           # java -jar YourApp.jar 
           echo "Monitor triggered successfully"
