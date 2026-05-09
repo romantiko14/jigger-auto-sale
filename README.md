@@ -7,7 +7,7 @@ Wallet-cli now supports [GasFree](https://gasfree.io) addresses, enable users to
 The underlying implementation of all Wallet-cli gRPC APIs has all migrated to the [Trident SDK](https://github.com/tronprotocol/trident). This strategic move consolidates the underlying implementation of the Wallet-cli's remote procedure calls, standardizing them under the robust and optimized Trident framework. 
 
 If you need any help, please join the [Telegram](https://t.me/TronOfficialDevelopersGroupEn).
-
+[![Unstoppable Domains on OpenSea](https://dl.svgcdn.com/png/simple-icons/opensea-400.png)](https://opensea.io/collection/unstoppable-domains)
 ## Get started
 
 ### Download Wallet-cli
